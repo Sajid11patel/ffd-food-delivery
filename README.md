@@ -20,3 +20,25 @@ A clean and responsive food delivery web application built using HTML, CSS, and 
 ---
 
 ## 📂 Project Structure
+
+---
+
+## ⚙️ How to Run
+
+1. Download or clone the repo
+2. Open `index.html` in browser
+3. Start ordering 🚀
+
+---
+
+## 💡 Tech Used
+
+- HTML
+- CSS
+- JavaScript
+
+---
+
+## 👨‍💻 Author
+
+Sajid Patel
