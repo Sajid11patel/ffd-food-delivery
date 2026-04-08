@@ -20,7 +20,19 @@ A clean and responsive food delivery web application built using HTML, CSS, and 
 ---
 
 ## 📂 Project Structure
-
+ffd-food-delivery/
+│
+├── index.html (Landing Page)
+├── login.html (Signup/Login)
+├── sajid.html (Main App)
+├── offers.html
+├── contact.html
+├── confirm.html
+│
+├── style.css
+├── script.js
+│
+└── pjimages/
 ---
 
 ## ⚙️ How to Run
