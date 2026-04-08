@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>FFD - Food Delivery</title>
+
+<style>
+
+body{
+margin:0;
+font-family:Arial;
+background:#dac691;
+color:white;
+text-align:center;
+}
+
+.hero{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+}
+
+.hero img{
+width:80%;
+max-width:900px;
+border-radius:15px;
+box-shadow:0 10px 30px rgba(0,0,0,0.5);
+}
+
+.start-btn{
+margin-top:30px;
+padding:15px 35px;
+font-size:20px;
+background:#c48d03;
+border:none;
+border-radius:8px;
+color:white;
+cursor:pointer;
+transition:0.3s;
+}
+
+.start-btn:hover{
+background:#c48d03;
+transform:scale(1.05);
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="hero">
+
+<img src="offer.jpg">
+
+<button class="start-btn" onclick="goLogin()">
+Order Now
+</button>
+
+</div>
+
+<script>
+
+function goLogin(){
+window.location.href="login.html";
+}
+
+</script>
+
+</body>
+</html>

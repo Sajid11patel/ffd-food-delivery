@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Food Order Website</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+
+<div class="logo-section">
+    <h1>FFD</h1>
+    <p>Fresh • Fast • Delicious</p>
+</div>
+
+<nav class="navbar">
+
+<ul>
+<li><a href="sajid.html">Home</a></li>
+<li><a href="#menu">Menu</a></li>
+<li><a href="offers.html">Offers</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+<div class="nav-user">
+<div id="user-name"></div>
+</div>
+
+<div class="cart" onclick="toggleCart()">
+🛒 Cart (<span id="cart-count">0</span>)
+</div>
+<div id="cart-dropdown" class="cart-dropdown">
+
+<h3>Your Cart</h3>
+
+<ul id="cart-items"></ul>
+
+<p>Total: ₹<span id="total-price">0</span></p>
+
+<button class="checkout-btn" onclick="goCheckout()">Checkout</button>
+
+</div>
+<div class="user-info">
+
+<div id="user-name"></div>
+
+<div id="user-address"></div>
+
+</div>
+
+</nav>
+
+</header>
+
+
+
+<section class="category">
+
+<section id="menu" class="category">
+
+<h2>Foods</h2>
+
+<div class="scroll-container">
+
+<div class="card">
+<img src="pjimages/burger.jpg">
+<h3>Burger</h3>
+<p>₹120</p>
+<button onclick="addToCart('burger',120)">Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="pjimages/pizza.jpg">
+<h3>Pizza</h3>
+<p>₹250</p>
+<button onclick="addToCart('pizza',250)">Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="pjimages/pasta.jpg">
+<h3>Pasta</h3>
+<p>₹180</p>
+<button onclick="addToCart('pasta',180)">Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="pjimages/fries.jpg">
+<h3>Fries</h3>
+<p>₹90</p>
+<button onclick="addToCart('freis',90)">Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="pjimages/noodles.jpg">
+<h3>Noodles</h3>
+<p>₹160</p>
+<button onclick="addToCart('noodles',160)">Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="pjimages/sandwich.jpg">
+<h3>Sandwich</h3>
+<p>₹110</p>
+<button onclick="addToCart('sandwich',110)">Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="pjimages/momos.jpg">
+<h3>Momos</h3>
+<p>₹140</p>
+<button onclick="addToCart('momos',140)">Add to Cart</button>
+</div>
+
+</div>
+</section>
+
+
+
+<section class="category">
+
+<h2>Sweets</h2>
+
+<div class="scroll-container">
+
+<div class="card">
+<img src="pjimages/kaju_katli.png">
+<h3>Kaju Katli</h3>
+<p>₹150</p>
+<button onclick="addToCart('kaju katli',150)">Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="pjimages/peda.png">
+<h3>Peda</h3>
+<p>₹90</p>
+<button onclick="addToCart('peda',90)">Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="pjimages/soan_papdi.png">
+<h3>Soan Papdi</h3>
+<p>₹80</p>
+<button onclick="addToCart('soan papdi',80)">Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="pjimages/gulabjamun.png">
+<h3>Gulab Jamun</h3>
+<p>₹80</p>
+<button onclick="addToCart('gulab jamun',80)">Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="pjimages/rasgulla.png">
+<h3>Rasgulla</h3>
+<p>₹90</p>
+<button onclick="addToCart('rasgulla',90)">Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="pjimages/jalebi.png">
+<h3>Jalebi</h3>
+<p>₹70</p>
+<button onclick="addToCart('jalebi',70)">Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="pjimages/laddu.png">
+<h3>Laddu</h3>
+<p>₹60</p>
+<button onclick="addToCart('laddu',60)">Add to Cart</button>
+</div>
+
+</div>
+</section>
+
+
+
+<section class="category">
+
+<h2>Ice Creams</h2>
+
+<div class="scroll-container">
+
+<div class="card">
+<img src="pjimages/buttersctch.png">
+<h3>Butterscotch</h3>
+<p>₹130</p>
+<button onclick="addToCart('Butterscotch',130)">Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="pjimages/blackcurrent.png">
+<h3>Black Currant</h3>
+<p>₹135</p>
+<button onclick="addToCart('Black Currant',135)">Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="pjimages/cookiescream.png">
+<h3>Cookies & Cream</h3>
+<p>₹140</p>
+<button onclick="addToCart('Cookies & Cream',140)">Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="pjimages/chocolate.png">
+<h3>Chocolate Ice Cream</h3>
+<p>₹120</p>
+<button onclick="addToCart('Chocolate Ice Cream',120)">Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="pjimages/vanilla.png">
+<h3>Vanilla Ice Cream</h3>
+<p>₹100</p>
+<button onclick="addToCart('Vanilla Ice Cream',100)">Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="pjimages/strawberry.png">
+<h3>Strawberry Ice Cream</h3>
+<p>₹110</p>
+<button onclick="addToCart('Strawberry Ice Cream',110)">Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="pjimages/mango.png">
+<h3>Mango Ice Cream</h3>
+<p>₹115</p>
+<button onclick="addToCart('Mango Ice Cream',115)">Add to Cart</button>
+</div>
+
+</div>
+</section>
+
+<script src="script.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+
+<script>
+
+let cartCount = 0;
+let totalPrice = 0;
+
+function addToCart(price){
+
+cartCount++;
+totalPrice += price;
+
+document.getElementById("cart-count").innerText = cartCount;
+
+alert("Item added to cart! Total: ₹" + totalPrice);
+
+}
+
+</script>
+
+<script>
+    let user = localStorage.getItem("ffdUser");
+let city = localStorage.getItem("ffdCity");
+let phone = localStorage.getItem("ffdPhone");
+
+if(user){
+
+document.getElementById("user-name").innerHTML = 
+"👤 " + user + "<br> 📍 " + city;
+
+}
+</script>
+</body>
+</html>

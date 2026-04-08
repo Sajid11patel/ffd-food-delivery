@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login - FFD</title>
+
+<style>
+
+body{
+font-family:Arial;
+background:black;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+}
+
+.login-box{
+background:purple;
+padding:40px;
+border-radius:10px;
+box-shadow:0 5px 20px rgba(0,0,0,0.2);
+text-align:center;
+}
+
+input{
+width:250px;
+padding:10px;
+margin:10px 0;
+border:1px solid #ccc;
+border-radius:5px;
+}
+
+button{
+padding:10px 25px;
+background:black;
+border:none;
+color:white;
+border-radius:5px;
+cursor:pointer;
+}
+
+button:hover{
+background:#ff1a1a;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="login-box">
+
+<h2>Signup to FFD</h2>
+
+<input type="email" id="email" placeholder="Enter Email"><br>
+
+<input type="password" placeholder="Enter Password"><br>
+<input type="text" id="city" placeholder="Enter Your City"><br>
+
+<input type="text" id="phone" placeholder="Enter Contact Number"><br>
+
+<button onclick="loginUser()">Signup</button>
+
+</div>
+
+</body>
+<script>
+
+function loginUser(){
+
+let email = document.getElementById("email").value;
+let city = document.getElementById("city").value;
+let phone = document.getElementById("phone").value;
+
+let username = email.split("@")[0];
+
+localStorage.setItem("ffdUser", username);
+localStorage.setItem("ffdCity", city);
+localStorage.setItem("ffdPhone", phone);
+
+window.location.href = "sajid.html";
+
+}
+
+</script>
+</html>
